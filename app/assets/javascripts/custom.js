@@ -12,6 +12,10 @@ function shortUrl()
          $(".label-show").text("Here's your short URL")
          $(".short-url-show").text(data["short_url"])
         }
+         else
+        {
+            $("#error_msg_label").text(data["error_msg"])
+        }
     }
 });
 }

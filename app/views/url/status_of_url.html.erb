@@ -1,0 +1,10 @@
+<h1>Analytics</h1>
+<br>
+<% @short_url.each do |su|%>
+	<h2><%= su.original_url %></h2>
+	<h3><%= su.short_url %></h3>
+	<br>
+	<p><label>Total no of clicks:- </label><%= su.no_of_clicks %></p>
+	<p><label>Last ip_address:- </label><%= su.ip_address %></p>
+	<hr>
+<% end %>

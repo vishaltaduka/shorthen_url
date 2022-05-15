@@ -1,8 +1,11 @@
 <h3>Welcome to Short.com</h3>
 <p>Please enter the url here</p>
+<br>
 <%= text_field_tag(:shorthen_url,nil,{ class:"form-control", id: "short-url",placeholder: "Enter the url "})%>
 <%= submit_tag 'shorthen', :onclick => "shortUrl()" %>
+<br>
+<label id="error_msg_label" style="margin-bottom: 0;color: red;width: 100%;text-align: center;"><b></b></label>
 
-
+<br>
 <p class="label-show"></p>
 <h3 class="short-url-show"></h3>
